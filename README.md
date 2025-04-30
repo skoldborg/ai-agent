@@ -2,6 +2,8 @@
 
 This is a simple AI agent based on OpenAI for experimental purposes. 
 
+The agent is conversational and has a memory (file based for now), meaning it can answer prompts and will remember your conversation.
+
 ## Setup
 
 This repo requires **Node.js version 20+**.
