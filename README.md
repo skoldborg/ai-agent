@@ -2,7 +2,9 @@
 
 This is a simple AI agent based on OpenAI for experimental purposes. 
 
-The agent is conversational and has a memory (file based for now), meaning it can answer prompts and will remember your conversation.
+The agent is conversational and has a file based memory, meaning it can answer prompts and will remember your conversation.
+
+The agent has tools that allow it to generate images based on prompts, provide you with some high class dad jokes, or scan reddit. 
 
 ## Setup
 
@@ -15,10 +17,12 @@ npm install
 ## Running
 
 ```bash
-npm start "A prompt for the agent"
+npm start "Generate an image based on a dad joke"
 ```
 
 ## OpenAI API Key
+
+The agent requires an OpenAI API key to work. 
 
 Create an [API Key from OpenAI](https://platform.openai.com/settings/organization/api-keys) and save it in a `.env` file:
 
