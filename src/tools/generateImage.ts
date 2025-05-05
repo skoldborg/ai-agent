@@ -17,7 +17,7 @@ export const generateImageTool: ToolFn<Args, string> = async ({ toolArgs }) => {
     model: 'dall-e-3',
     prompt: toolArgs.prompt,
     n: 1, // how many images to generate
-    size: '512x512', // size of the image
+    size: '1024x1024', // size of the image
   })
 
   return response.data[0].url!
