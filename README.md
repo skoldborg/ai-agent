@@ -4,7 +4,7 @@ This is a simple AI agent based on OpenAI for experimental purposes.
 
 The agent is conversational and has a file based memory, meaning it can answer prompts and will remember your conversation.
 
-The agent has tools that allow it to generate images based on prompts, provide you with some high class dad jokes, or scan reddit. 
+The agent has tools that allow it to generate images based on prompts, provide you with some high class dad jokes, or scan the Gunners subreddit (this can be changed to any subreddit in `src/tools/reddit.ts`, just don't change it to Sp*rs or it'll blow up).
 
 ## Setup
 

@@ -11,7 +11,7 @@ export const redditToolDefinition = {
 type Args = z.infer<typeof redditToolDefinition.parameters>
 
 export const redditTool: ToolFn<Args, string> = async ({ toolArgs }) => {
-  const { data } = await fetch('https://www.reddit.com/r/football/.json', {
+  const { data } = await fetch('https://www.reddit.com/r/Gunners/.json', {
     headers: { Accept: 'application/json' },
   }).then((res) => res.json())
 
