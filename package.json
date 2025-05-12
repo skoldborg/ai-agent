@@ -3,18 +3,17 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "start": "npx tsx index.ts"
+    "start": "npx tsx index.ts",
+    "eval": "npx tsx evals/run.ts $1"
   },
   "overrides": {
     "whatwg-url": "13.0.0"
-  },
-  "devDependencies": {
-    "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "autoevals": "^0.0.127",
     "dotenv": "^16.4.5",
     "got": "^14.4.4",
     "lowdb": "^7.0.1",
