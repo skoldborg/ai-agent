@@ -4,7 +4,7 @@ This is a simple AI agent based on OpenAI for experimenting with LLM's, system p
 
 The agent is conversational and has a file based memory, meaning it can answer prompts and will remember your conversation.
 
-The agent has tools that allow it to:
+The agent has tools that allows it to:
 
 * Generate images based on prompts
 * Handle queries about movies and movie related data
