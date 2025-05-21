@@ -39,7 +39,7 @@ npx tsx evals/experiments/reddit.eval.ts
 
 ## RAG
 
-The movie search uses a vector DB on Upstash. I use to experiment with RAG. 
+The movie search uses a vector DB on Upstash. I use it to experiment with RAG. 
 It requires environment variables for a vector DB to function properly. 
 Before running it the first time you need to generate the vector data by running:
 
