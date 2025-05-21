@@ -1,6 +1,6 @@
 # AI Agent
 
-This is a simple AI agent based on OpenAI for experimental purposes. 
+This is a simple AI agent based on OpenAI for experimenting with LLM's, using tools, running evals, etc. 
 
 The agent is conversational and has a file based memory, meaning it can answer prompts and will remember your conversation.
 
@@ -18,6 +18,12 @@ npm install
 
 ```bash
 npm start "Generate an image based on a dad joke"
+```
+
+## Running evals
+
+```bash
+npm run eval $evalName
 ```
 
 ## OpenAI API Key
