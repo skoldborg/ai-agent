@@ -1,3 +1,5 @@
+import 'dotenv/config'
+
 import { runLLM } from '../../src/llm'
 import { dadJokeToolDefinition } from '../../src/tools/dadJoke'
 import { runEval } from '../evalTools'

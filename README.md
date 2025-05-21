@@ -1,6 +1,6 @@
 # AI Agent
 
-This is a simple AI agent based on OpenAI for experimenting with LLM's, using tools, running evals, etc. 
+This is a simple AI agent based on OpenAI for experimenting with LLM's, system prompts, using tools, running evals, etc. 
 
 The agent is conversational and has a file based memory, meaning it can answer prompts and will remember your conversation.
 
@@ -24,6 +24,12 @@ npm start "Generate an image based on a dad joke"
 
 ```bash
 npm run eval $evalName
+```
+
+If you're on Windows you need to do run explicitly run the file of the eval, eg:
+
+```bash
+npx tsx evals/experiments/reddit.eval.ts
 ```
 
 ## OpenAI API Key
