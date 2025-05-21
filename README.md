@@ -58,3 +58,5 @@ Create an [API Key from OpenAI](https://platform.openai.com/settings/organizatio
 ```
 OPENAI_API_KEY='YOUR_API_KEY'
 ```
+
+Other required environment keys can be found in `.env.example`
