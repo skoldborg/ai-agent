@@ -4,6 +4,7 @@ import {
   generateImageTool,
   generateImageToolDefinition,
 } from './tools/generateImage'
+import { movieSearchTool, movieSearchToolDefinition } from './tools/movieSearch'
 import { redditTool, redditToolDefinition } from './tools/reddit'
 
 export const runTool = async (
@@ -24,6 +25,9 @@ export const runTool = async (
 
     case generateImageToolDefinition.name:
       return generateImageTool(input)
+
+    case movieSearchToolDefinition.name:
+      return movieSearchTool(input)
 
     default:
       return `Never run this tool: ${toolCall.function.name} again, or else!`

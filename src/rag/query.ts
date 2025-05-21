@@ -39,7 +39,6 @@ export const queryMovies = async (
   const results = await index.query({
     data: query,
     topK,
-    filter: filterStr || undefined,
     includeMetadata: true,
     includeData: true,
   })
