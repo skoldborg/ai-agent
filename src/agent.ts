@@ -10,20 +10,26 @@ export const runAgent = async ({
   userMessage: string
   tools: any[]
 }) => {
+  // Add the user message to memory
   await addMessages([{ role: 'user', content: userMessage }])
 
   const loader = showLoader('🤔')
 
   while (true) {
+    // Get message history from memory - including the user current message
     const history = await getMessages()
+    // Run the LLM with the message history and tools
     const response = await runLLM({ messages: history, tools })
 
+    // Add the LLM response to memory
     await addMessages([response])
 
     // Break loop if the response is a final answer
     if (response.content) {
       loader.stop()
       logMessage(response)
+
+      // Add the final answer to memory
       return getMessages()
     }
 
